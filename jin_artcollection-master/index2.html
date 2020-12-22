@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JIN ARTCOLLECTION GALLERY</title>
+<meta name="author" content="Alvaro Trigo Lopez" />
+<meta name="description" content="JIN ARTCOLLECTION GALLERY" />
+<meta name="keywords" content="fullpage,extension,addon,plugin,scrollhorizontally,scroll horizontally,horizontal,horizontally,landscape,slides,slide,panel,full-screen,full width,mousewheel,wheel,trackpad, snap" />
+<meta name="Resource-type" content="Document" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="css/fullpage.min.css" />
+<link rel="stylesheet" type="text/css" href="css/examples.css" />
+<link rel="stylesheet" href="https://use.typekit.net/vaq0ofr.css">
+<link rel="stylesheet" type="text/css" href="modal-video-master/css/modal-video.css">
+<script src="modal-video-master/js/modal-video.js"></script>
+<script>
+    (function(d) {
+      var config = {
+        kitId: 'kaa3qsn',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+</script>
+<!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
+</head>
+<body>
+    <ul id="menu">
+        <li data-menuanchor="firstPage"><a href="#firstPage">GALLERY</a></li>
+        <li data-menuanchor="secondPage"><a href="#secondPage">PROFILE</a></li>
+        <li data-menuanchor="3rdPage"><a href="#3rdPage">EVENT</a></li>
+        <li data-menuanchor="4thPage"><a href="#4thPage">ONLINE SHOP</a></li>
+        <li data-menuanchor="5thPage"><a href="#5thPage">EVENT2</a></li>
+    </ul>
+
+<div id="myContainer">
+<div class="section gallery">
+    <div class="slide images first-img">
+        <div class="intro">
+            <h1 class="title"><span data-text="JIN">JIN</span>&nbsp;<span data-text="ARTCOLLECTION">ARTCOLLECTION</span></h1>
+            <p>I don't do drugs. I am drugs.</p>
+        </div>
+    </div>
+    <div class="slide images second-img"><h1></h1></div>
+    <div class="slide images third-img"><h1></h1></div>
+    <div class="slide images fourth-img"><h1></h1></div>
+    <div class="slide images fifth-img"><h1></h1></div>
+    <div class="slide images sixth-img"><h1></h1></div>
+    <div class="slide images seventh-img"><h1></h1></div>
+    <div class="slide images eighth-img"><h1></h1></div>
+</div>
+
+<div class="section profile">
+     <!-- Vimeoの埋め込み
+        <div class="video"></div>
+        <iframe width="560" height="315" class="alignfull" src="https://player.vimeo.com/video/490204884" sframeborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <span class="lazyload-wrapper"></span>
+    </div>   -->
+     <hgroup>
+        <h1>
+            JIN
+            <!-- <ruby class="ja">
+                今野　仁
+                <rp>(</rp>
+                <rt class="en">KONNO  JIN
+                <rp>)</rp>
+            </ruby>  -->
+            <br>is a Hokkaido based artist.
+        </h1>
+    </hgroup>
+    <p>
+        アーティスト。古着屋の看板や洋服制作をはじめ、2019年からは日本の伝統である浮世絵を現代的でポップに描き、新たな表現方法を見出している。
+    </p>
+</div>
+
+<div class="section event">
+        <div class="info">
+            <h1><span class="gurimu">遇里夢</span>&nbsp;<span class="jin">× JIN</span></h1>
+        </div>
+        <div class="info_discription">
+            <p>
+                DATE&nbsp;&nbsp;&nbsp;&nbsp;2/4(thu) ~ 2/22(mon)
+                <br>ADDRESS&nbsp;&nbsp;&nbsp;&nbsp;北海道旭川市東光５条４丁目１−５
+            </p>
+            <div class="info_image">
+                <img class="info_png" src="images/info.png">
+            </div>
+        </div>
+
+</div>
+<div class="section store">
+     <a href="https://minne.com/@jinart" class="button">ONLINE STORE</a>
+</div>
+
+
+
+
+
+
+
+<div class="section event5">
+    <section class="galleryIndexWrapper">
+        <div id="js-vgrid" class="galleryIndex js-galleryLarge clearfix" style="position: relative; width: auto; height: 5600px;">
+            <div class="unit unitMiddle" style="position: absolute; left: 0px; opacity: 1;">
+                <a class="js-modal-btn-vimeo" data-video-id="490204884" href="https://vimeo.com/manage/490204884/general">
+                    <div class="inner">
+                        <p class="photo">
+                            <img src="images/news.jpg">
+                        </p>
+                        <div class="text font-medium">
+                            <div class="textInner">
+                                <p class="date">
+                                    <time datetime>2020/12/22</time>
+                                </p>
+                                <h3 class="title*">JINARTCOLLECTION</h3>
+                            </div>
+                            <span class="detail font-medium">2020</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+</div>
+$(".js-modal-btn-vimeo").modalVideo({channel:'vimeo'});
+
+
+
+
+
+
+
+
+<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script type="f4568864a0b6078729749c2e-text/javascript" src="fullpage.scrollHorizontally.min.js"></script>
+<script type="f4568864a0b6078729749c2e-text/javascript" src="https://unpkg.com/fullpage.js/dist/fullpage.extensions.min.js"></script>
+<script type="f4568864a0b6078729749c2e-text/javascript">
+    new fullpage('#myContainer', {
+        anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage'],
+        menu: '#menu',
+        slidesNavigation: true,
+
+        //In addition to the extension license you'll 
+        //need to acquire a fullPage.js license from https://goo.gl/5x9a22
+        licenseKey: 'INSERT YOUR FULLPAGE LICENSE KEY HERE',
+
+        scrollHorizontally: true,
+        scrollHorizontallyKey: 'INSERT YOUR EXTENSION KEY HEREINSERT YOUR EXTENSION KEY HERE', //see https://goo.gl/xkUmHS
+    });
+</script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="f4568864a0b6078729749c2e-|49" defer=""></script>
+
+</body>
+</html>

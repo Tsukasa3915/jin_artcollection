@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head
+    prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#"
+  >
+    <meta charset="UTF-8" />
+    <title>YouTubeをポップアップさせる方法</title>
+    <meta name="description" content="YouTubeをポップアップさせる方法" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- アイコンを使えるようにする -->
+    <link rel="stylesheet" href="style2.css" />
+    <!-- IcoMoonウェブアイコンフォントの呼び出し -->
+    <meta name="robots" content="noindex,follow" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../base/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../base/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../base/favicon/favicon-16x16.png"
+    />
+    <link rel="stylesheet" href="base.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.2.0/dist/css/yakuhanjp_s.min.css"
+    />
+
+    <!-- js記述用cssがあれば記述 -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- //js記述用cssがあれば記述 -->
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/modal-video@2.4.2/css/modal-video.min.css"
+    />
+    <!-- //js専用のcssがあれば記述 -->
+  </head>
+
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <div class="wrapper" itemscope itemprop="mainContentOfPage">
+      <div class="snsBox">
+        <div class="snsBox_inner">
+          <ul>
+            <li>
+              <a
+                class="hd-facebook"
+                href="https://www.facebook.com/yumegori/"
+                rel="nofollow"
+                target="_blank"
+              >
+                <i class="icon-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                class="hd-twitter"
+                href="http://twitter.com/yumegori1228/"
+                rel="nofollow"
+                target="_blank"
+              >
+                <i class="icon-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                class="hd-feedly"
+                href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fyumegori.com%2Ffeed%2F/"
+                rel="nofollow"
+                target="_blank"
+              >
+                <i class="icon-feedly"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                class="hd-push7"
+                href="https://yumegori.app.push7.jp/"
+                rel="nofollow"
+                target="_blank"
+              >
+                <i class="icon-push7"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <header
+        class="main-header"
+        itemscope
+        itemtype="http://schema.org/WPHeader"
+      >
+        <div class="top-title-inner">
+          <div class="logo-box">
+            <h1 class="logo-title">
+              <a href="https://yumegori.com/" itemprop="url"
+                ><img src="../base/images/main-title.svg" alt="夢みるゴリラ" />
+              </a>
+            </h1>
+          </div>
+          <div class="gnav-box">
+            <ul>
+              <li>
+                <a href="https://yumegori.com/category/web/" itemprop="url"
+                  >ウェブ制作</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://yumegori.com/category/photoshop/"
+                  itemprop="url"
+                  >PHOTOSHOP</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://yumegori.com/category/wordpress/"
+                  itemprop="url"
+                  >WORDPRESS</a
+                >
+              </li>
+              <li>
+                <a href="https://yumegori.com/category/summary" itemprop="url"
+                  >まとめ</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="sp-gnav-box">
+            <div id="sp-button-toggle"><i class="icon-menu"></i></div>
+          </div>
+          <div class="sp-gnav">
+            <ul>
+              <li>
+                <a href="https://yumegori.com/category/web/" itemprop="url"
+                  >ウェブ制作</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://yumegori.com/category/photoshop/"
+                  itemprop="url"
+                  >PHOTOSHOP</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://yumegori.com/category/wordpress/"
+                  itemprop="url"
+                  >WORDPRESS</a
+                >
+              </li>
+              <li>
+                <a href="https://yumegori.com/category/summary/" itemprop="url"
+                  >まとめ</a
+                >
+              </li>
+              <li>
+                <a href="https://yumegori.com/category/language/" itemprop="url"
+                  >語学</a
+                >
+              </li>
+            </ul>
+            <div class="sp-gnav-sns">
+              <a
+                class="profile-sns-feedly common_items"
+                href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fyumegori.com%2Ffeed%2F/"
+                rel="nofollow"
+                target="_blank"
+              >
+                <i class="icon-feedly"></i>
+              </a>
+              <a
+                class="profile-sns-twitter common_items"
+                href="http://twitter.com/yumegori1228/"
+                rel="nofollow"
+                target="_blank"
+              >
+                <i class="icon-twitter"></i>
+              </a>
+              <a
+                class="profile-sns-facebook common_items"
+                href="https://www.facebook.com/yumegori/"
+                rel="nofollow"
+                target="_blank"
+              >
+                <i class="icon-facebook"></i>
+              </a>
+            </div>
+          </div>
+          <div class="gorilla-deco">
+            <img src="../base/images/3gorilla.svg" alt="" />
+          </div>
+        </div>
+      </header>
+      <div class="demo-img-area"></div>
+      <!-- /contents/ -->
+      <main id="common">
+        <div class="common-wrapper">
+          <h2 class="base_ttl01">
+            YouTubeをポップアップさせる方法
+          </h2>
+
+          <div class="demo-main">
+            <div class="demo-inner">
+              <div class="c-flex c-flex--text">
+                <a
+                  href="javascript:void(0);"
+                  data-video-id="_gI2YnYke1I"
+                  class="js-modal-video"
+                  >ポップアップ01</a
+                >
+                <a
+                  href="javascript:void(0);"
+                  data-video-id="_6qDL8QY_Ps"
+                  class="js-modal-video"
+                  >ポップアップ02</a
+                >
+                <a
+                  href="javascript:void(0);"
+                  data-video-id="k8fDN0CCMM0"
+                  class="js-modal-video"
+                  >ポップアップ03</a
+                >
+              </div>
+
+              <div class="c-flex c-flex--images">
+                <a
+                  href="javascript:void(0);"
+                  data-video-id="PT2_F-1esPk"
+                  class="js-modal-video"
+                >
+                  <img src="./images/popup01.jpg" alt="" />
+                </a>
+                <a
+                  href="javascript:void(0);"
+                  data-video-id="FM7MFYoylVs"
+                  class="js-modal-video"
+                >
+                  <img src="./images/popup04.jpg" alt="" />
+                </a>
+                <a
+                  href="javascript:void(0);"
+                  data-video-id="UfGMj10wOzg"
+                  class="js-modal-video"
+                >
+                  <img src="./images/popup03.jpg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="explain_box">
+            <!-- ▼▼▼▼head内に書くこと▼▼▼▼ -->
+            <div class="code_setup">
+              <h3>head</h3>
+              <pre>
+                               <code>
+&lt;!-- CSS --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdn.jsdelivr.net/npm/modal-video@2.4.2/css/modal-video.min.css&quot; /&gt;
+&lt;!-- jQuery --&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;//cdn.jsdelivr.net/npm/modal-video@2.4.2/js/jquery-modal-video.min.js&quot;&gt;&lt;/script&gt;
+                               </code>
+                           </pre>
+            </div>
+            <!-- ▲▲▲▲head内に書くこと▲▲▲▲ -->
+
+            <!-- ▼▼▼▼jsに書くこと▼▼▼▼ -->
+            <div class="code_setup">
+              <h3>jQuery</h3>
+              <pre>
+                               <code>
+(function () {
+if ($(&quot;.js-modal-video&quot;).length) {
+$(&quot;.js-modal-video&quot;).modalVideo({
+channel: &quot;youtube&quot;,
+youtube: {
+rel: 0,
+autoplay: 0,
+controls: 0,
+},
+});
+}
+})();
+                               </code>
+                           </pre>
+            </div>
+            <!-- ▲▲▲▲jsに書くこと▲▲▲▲ -->
+
+            <!-- ▼▼▼▼cssに書くこと▼▼▼▼ -->
+            <div class="code_setup">
+              <h3>CSS</h3>
+              <pre>
+                               <code>
+特になし
+                               </code>
+                           </pre>
+            </div>
+            <!-- ▲▲▲▲cssに書くこと▲▲▲▲ -->
+
+            <!-- ▼▼▼▼HTMLに書くこと▼▼▼▼ -->
+            <div class="code_setup">
+              <h3>HTML</h3>
+              <pre>
+                           <code>
+&lt;div class=&quot;c-flex c-flex--text&quot;&gt;
+&lt;a
+href=&quot;javascript:void(0);&quot;
+data-video-id=&quot;_gI2YnYke1I&quot;
+class=&quot;js-modal-video&quot;
+&gt;ポップアップ01&lt;/a
+&gt;
+&lt;a
+href=&quot;javascript:void(0);&quot;
+data-video-id=&quot;_6qDL8QY_Ps&quot;
+class=&quot;js-modal-video&quot;
+&gt;ポップアップ02&lt;/a
+&gt;
+&lt;a
+href=&quot;javascript:void(0);&quot;
+data-video-id=&quot;k8fDN0CCMM0&quot;
+class=&quot;js-modal-video&quot;
+&gt;ポップアップ03&lt;/a
+&gt;
+&lt;/div&gt;
+&lt;div class=&quot;c-flex c-flex--images&quot;&gt;
+&lt;a
+href=&quot;javascript:void(0);&quot;
+data-video-id=&quot;PT2_F-1esPk&quot;
+class=&quot;js-modal-video&quot;
+&gt;
+&lt;img src=&quot;./images/popup01.png&quot; alt=&quot;&quot; /&gt;
+&lt;/a&gt;
+&lt;a
+href=&quot;javascript:void(0);&quot;
+data-video-id=&quot;FM7MFYoylVs&quot;
+class=&quot;js-modal-video&quot;
+&gt;
+&lt;img src=&quot;./images/popup01.png&quot; alt=&quot;&quot; /&gt;
+&lt;/a&gt;
+&lt;a
+href=&quot;javascript:void(0);&quot;
+data-video-id=&quot;UfGMj10wOzg&quot;
+class=&quot;js-modal-video&quot;
+&gt;
+&lt;img src=&quot;./images/popup01.png&quot; alt=&quot;&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+                           </code>
+                       </pre>
+            </div>
+            <!-- ▲▲▲▲HTMLに書くこと▲▲▲▲ -->
+
+            <!-- ▼▼▼▼リンク▼▼▼▼ -->
+            <div class="link_area">
+              <a href="https://yumegori.com/yotube-popup-plugin"
+                >&lt;&lt;　説明ページに戻る</a
+              >
+            </div>
+            <!-- ▲▲▲▲リンク▲▲▲▲ -->
+          </div>
+          <div class="gori_deco02">
+            <img src="../base/images/smile.svg" alt="" />
+          </div>
+        </div>
+      </main>
+      <footer
+        itemscope="itemscope"
+        itemtype="http://schema.org/WPFooter"
+        id="footerCheck"
+      ></footer>
+    </div>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="base.js"></script>
+
+    <!-- demo用jsの記述 -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/modal-video@2.4.2/js/jquery-modal-video.min.js"
+    ></script>
+    <script src="js/init.js"></script>
+
+    <!-- //demo用jsの記述 -->
+  </body>
+</html>

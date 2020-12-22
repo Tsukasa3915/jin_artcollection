@@ -1,0 +1,767 @@
+@CHARSET "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho');
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#fff;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+
+/* Custom CSS
+ * --------------------------------------- */
+body{
+	font-family: arial,helvetica;
+	color: #333;
+	color: rgba(0,0,0,0.5);
+	/* background: linear-gradient(180deg, #f9f0f0, #f5f5f5) fixed;
+	animation:bg-move 3s linear 0s infinite; */
+}
+
+body{
+	background: linear-gradient(45deg, #d0d0d0, #e1f0f0, #e5f2f2);
+	background-size: 600% 600%;
+	animation: AnimationName 10s ease infinite;
+	}
+	 
+	@keyframes AnimationName {
+	0%{background-position:0% 50%}
+	/* 25%{background-position:25% 75%} */
+	50%{background-position:100% 50%}
+	/* 75%{background-position:25% 75%} */
+	100%{background-position:0% 50%}
+	}
+
+/* @keyframes bg-move{
+	0%{background: linear-gradient(60deg, #f9f0f0, #f5f5f5) fixed;}
+	5%{background: linear-gradient(70deg, #f9f0f0, #f5f5f5) fixed;}
+	10%{background: linear-gradient(80deg, #f9f0f0, #f5f5f5) fixed;}
+	15%{background: linear-gradient(90deg, #f9f0f0, #f5f5f5) fixed;}
+	20%{background: linear-gradient(100deg, #f9f0f0, #f5f5f5) fixed;}
+	25%{background: linear-gradient(110deg, #f9f0f0, #f5f5f5) fixed;}
+	30%{background: linear-gradient(120deg, #f9f0f0, #f5f5f5) fixed;}
+	35%{background: linear-gradient(130deg, #f9f0f0, #f5f5f5) fixed;}
+	40%{background: linear-gradient(140deg, #f9f0f0, #f5f5f5) fixed;}
+	45%{background: linear-gradient(150deg, #f9f0f0, #f5f5f5) fixed;}
+	50%{background: linear-gradient(160deg,#f9f0f0, #f5f5f5) fixed;}
+	55%{background: linear-gradient(150deg, #f9f0f0, #f5f5f5) fixed;}
+	60%{background: linear-gradient(140deg,#f9f0f0, #f5f5f5) fixed;}
+	65%{background: linear-gradient(130deg, #f9f0f0, #f5f5f5) fixed;}
+	70%{background: linear-gradient(120deg, #f9f0f0, #f5f5f5) fixed;}
+	75%{background: linear-gradient(110deg, #f9f0f0, #f5f5f5) fixed;}
+	80%{background: linear-gradient(100deg, #f9f0f0, #f5f5f5) fixed;}
+	85%{background: linear-gradient(90deg, #f9f0f0, #f5f5f5) fixed;}
+	90%{background: linear-gradient(80deg,#f9f0f0, #f5f5f5) fixed;}
+	95%{background: linear-gradient(70deg, #f9f0f0, #f5f5f5) fixed;}
+	100%{background: linear-gradient(60deg,#f9f0f0, #f5f5f5) fixed;}
+	 } */
+
+
+.wrap{
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	position: relative;
+}
+h1{
+	font-size: 6em;
+}
+p{
+	font-size: 2em;
+}
+.intro p{
+	width: 50%;
+	margin: 0 auto;
+	font-size: 1.5em;
+}
+.section{
+	text-align:center;
+}
+#menu li {
+	display:inline-block;
+	margin: 10px;
+	color: #000;
+	background:#fff;
+	background: rgba(255,255,255, 0.5);
+	-webkit-border-radius: 10px;
+            border-radius: 10px;
+}
+#menu li.active{
+	background:#666;
+	background: rgba(0,0,0, 0.5);
+	color: #fff;
+}
+#menu li a{
+	text-decoration:none;
+	color: #000;
+}
+#menu li.active a:hover{
+	color: #000;
+}
+#menu li:hover{
+	background: rgba(255,255,255, 0.8);
+}
+#menu li a,
+#menu li.active a{
+	padding: 9px 18px;
+	display:block;
+}
+#menu li.active a{
+	color: #fff;
+}
+#menu{
+	position:fixed;
+	top:0;
+	left:0;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+}
+.twitter-share-button{
+	position: fixed !important;
+	z-index: 99;
+	right: 149px;
+	top: 9px;
+}
+#infoMenu{
+	height: 20px;
+	color: #f2f2f2;
+	position:fixed;
+	z-index:70;
+	bottom:0;
+	width:100%;
+	text-align:right;
+	font-size:0.9em;
+	padding:8px 0 8px 0;
+}
+#infoMenu ul{
+	padding: 0 40px;
+}
+#infoMenu li a{
+	display: block;
+	margin: 0 22px 0 0;
+	color: #333;
+}
+#infoMenu li a:hover{
+	text-decoration:underline;
+}
+#infoMenu li{
+	display:inline-block;
+	position:relative;
+}
+#examplesList{
+	display:none;
+	background: #282828;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 20px;
+	float: left;
+	position: absolute;
+	bottom: 29px;
+	right: 0;
+	width:822px;
+	text-align:left;
+}
+#examplesList ul{
+	padding:0;
+}
+#examplesList ul li{
+	display:block;
+	margin: 5px 0;
+}
+#examplesList ul li a{
+	color: #BDBDBD;
+	margin:0;
+}
+#examplesList ul li a:hover{
+	color: #f2f2f2;
+}
+#examplesList .column{
+	float: left;
+	margin: 0 20px 0 0;
+}
+#examplesList h3{
+	color: #f2f2f2;
+	font-size: 1.2em;
+	margin: 0 0 15px 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,0.1);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+	padding: 0 0 5px 0;
+}
+#myContainer {
+	padding-top: 13rem;
+}
+
+
+
+/* Demos Menu
+ * --------------------------------------- */
+ #demosMenu{
+	position:fixed;
+	bottom: 10px;
+	right:10px;
+	z-index: 999;
+ }
+
+/* Buttons
+ * --------------------------------------- */
+#download a{
+    text-decoration: none
+}
+#download,
+#download:hover {
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .25)
+}
+.button {
+    margin: 20px 0 0 0;
+    vertical-align: middle;
+    display: inline-block
+}
+
+.button a {
+    color: #fff;
+    background: rgba(0,0,0,0.4);
+    padding: 15px 30px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.button a:hover {
+    color: #316f68;
+    background-color: #fff
+}
+
+
+/* Extensions preview menu
+ * --------------------------------------- */
+.preview-extensions-menu{
+	position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    border-top: 0;
+    box-shadow: 1px 0px 3px rgba(0,0,0,0.8);
+}
+.preview-extensions-menu li{
+	display: inline-block;
+	margin: 0;
+}
+.preview-extensions-menu li a{
+	padding: 15px 25px;
+	display: block;
+}
+.preview-buy-extension{
+    background: #3cc63c;
+}
+.preview-more-extensions{
+	background: #fff;
+}
+.preview-buy-extension a{
+	color: #fff;
+}
+.preview-buy-extension:hover{
+	background-color: #1a961a;
+}
+.preview-more-extensions a{
+	color: #333;
+}
+
+.code{
+	background: rgba(255,255,255,0.7);
+	padding: 0px 5px;
+	line-height: 25px;
+}
+
+/* section1 */
+
+.title span{
+	color: #fff;
+	position:relative;
+}
+
+.title span::after{
+	content:attr(data-text);
+    text-shadow:1px 0 0 #5185c5,0 1px 0 #5185c5,-1px 0 0 #5185c5,0 -1px 0 #5185c5;
+    color:#fff;
+    position:absolute;
+    left:2px;
+    top:2px;
+    mix-blend-mode:multiply;
+}
+
+.images {
+	background-size: cover;
+	background-color:rgba(255,255,255,0.2);
+	background-blend-mode:lighten;
+	background-position-x: center;
+}
+
+.first-img {
+	background-image: url(../images/jin.JPG);
+	background-position-y: 50%;
+}
+
+.second-img {
+	background-image: url(../images/poppin.jpg);
+	background-position-y: 40%;
+}
+
+.third-img {
+	background-image: url(../images/monstar.jpg);
+	background-position-y: 30%;
+}
+
+.fourth-img {
+	background-image: url(../images/nippon.jpg);
+	background-position-y: 30%;
+}
+
+.fifth-img {
+	background-image: url(../images/eggman.jpg);
+	background-position-y: 30%;
+}
+
+.sixth-img {
+	background-image: url(../images/end.jpg);
+	background-position-y: 30%;
+}
+
+.seventh-img {
+	background-image: url(../images/hope.jpg);
+	background-position-y: 30%;
+}
+
+.eighth-img {
+	background-image: url(../images/look.jpg);
+	background-position-y: 30%;
+}
+
+@media screen and (max-width: 959px) {
+	/* 959px以下に適用されるCSS（タブレット用） */
+	.first-img {
+		background-image: url(../images/welcome.jpg);
+	}
+	h1 {
+		font-size: 4em;
+	}
+	.intro p {
+		font-size: 1.5em;
+	}
+}
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+	.first-img {
+		background-image: url(../images/welcome.jpg);
+		
+	}
+	h1{
+		font-size: 2em;
+	}
+	.intro p {
+		font-size: 0.9em;
+	}
+	#menu li {
+		display:inline-block;
+		margin: 5px;
+		color: #000;
+		background:#fff;
+		background: rgba(255,255,255, 0.5);
+		-webkit-border-radius: 10px;
+				border-radius: 10px;
+	}
+	#menu li.active{
+		background:#666;
+		background: rgba(0,0,0, 0.5);
+		color: #fff;
+	}
+	#menu li a{
+		text-decoration:none;
+		color: #000;
+		font-size: 0.5ex;
+	}
+	#menu li.active a:hover{
+		color: #000;
+	}
+	#menu li:hover{
+		background: rgba(255,255,255, 0.8);
+	}
+	#menu li a,
+	#menu li.active a{
+		padding: 4px 10px;
+		display:block;
+	}
+	#menu li.active a{
+		color: #fff;
+	}
+	#menu{
+		position:fixed;
+		top:0;
+		left:0;
+		height: 40px;
+		z-index: 70;
+		width: 100%;
+		padding: 0;
+		margin:0;
+	}
+}
+
+/* section2 */
+
+.lazyload-wrapper {
+    display: block;
+    position: relative;
+}
+
+hgroup {
+	display: block;
+	padding-top: 5rem;
+	margin-left: 214px;
+	margin-right: 214px;
+}
+
+.profile h1 {
+	color: rgb(53, 53, 53);
+	font-size: 2rem;
+	letter-spacing: 8px;
+	line-height: 1.4;
+	font-family: 'Sawarabi Mincho', sans-serif;;
+}
+
+.ja {
+	font-size: 2.3rem;
+}
+.en {
+	font-family: auto;
+}
+
+
+.profile .fp-tableCell {
+	display: block;
+	height: 100%;
+}
+
+/* .fp-section.fp-table {
+	width: auto;
+} */
+
+figure {
+	width: 100%;
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+.profile p {
+	color: black;
+	font-size: 15px;
+	padding-top: 30px;
+	text-align: left;
+	letter-spacing: 6px;
+	font-family: serif;
+	margin-left: 214px;
+	margin-right: 214px;
+}
+
+@media screen and (max-width: 959px) {
+	/* 959px以下に適用されるCSS（タブレット用） */
+	hgroup {
+		padding-top: 6rem;
+		margin-left: 100px;
+		margin-right: 100px;
+	}
+	.profile h1 {
+		font-size: 1.5rem;
+		letter-spacing: 7px;
+		line-height: 1.7;
+	}
+	.ja {
+		font-size: 1.5rem;
+	}
+	.profile p {
+		padding-top: 20px;
+		margin-left: 100px;
+		margin-right: 100px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+
+	/* section2 */
+	hgroup {
+		padding-top: 4rem;
+		margin-left: 13px;
+		margin-right: 13px;
+	}
+	.profile h1 {
+		font-size: 0.8rem;
+		letter-spacing: 6px;
+		line-height: 2;
+	}
+	.ja {
+		font-size: 0.8rem;
+		margin-top: 5px;
+	}
+	.profile p {
+		font-size: 9px;
+		letter-spacing: 3px;
+		padding-top: 15px;
+		margin-left: 13px;
+		margin-right: 13px;
+	}
+}
+
+/* sectin3 */
+/* .event {
+	background-image: url(../images/moving.jpg);
+} */
+.event {
+	/* background: linear-gradient(to bottom, #2a8fc3 0%, #2a8fc3 30%, #4298cc 30%, #4298cc 100%); */
+}
+.info {
+	height: 150px;
+	display: contents;
+}
+.info_discription p {
+	font-size: 2rem;
+	display: inline-block;
+	text-align: left;
+}
+.info_image {
+	position: fixed;
+	right: 450px;
+    top: 2215px;
+}
+.info_png {
+	height: 950px;
+}
+.event .fp-tableCell {
+	vertical-align: baseline;
+}
+.event h1 {
+	color: #fff;
+	font-size: 6rem;
+	position: relative;
+	-webkit-text-stroke: 1px rgb(0, 0, 0);
+	left: 575px;
+	top: 400px;
+	transform: rotate(90deg);
+}
+.event h1 .jin {
+	font-family: mic-32-new-rounded-web, sans-serif;	
+}
+.event h1 .gurimu {
+	font-family: a-otf-jun-pro, sans-serif;
+}
+
+
+/* section4 */
+
+.store {
+	background-color:rgba(255,255,255,0.2);
+	background-image: url(../images/news.jpg);
+	background-size: cover;	
+	background-blend-mode: lighten;
+	background-position-x: center;
+}
+
+.button {
+	display: inline-block;
+	border-radius : 999px;
+	font-size: 0.8rem;
+	text-align: center;
+	cursor: pointer;
+	padding: 20px 88px;
+	background: rgba(0, 0, 0, 0.3);
+	color: #ffffff;
+	font-family: 'Sawarabi Mincho';
+	line-height: 1em;
+	transition: .3s;
+	border: none;
+  }
+.button:hover {
+	color: #ffffff;
+	background: rgba(0, 0, 0, 1);
+}
+/* https://minne.com/@jinart */
+
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+	.store {
+		background-color:rgba(255,255,255,0.2);
+		background-position-x: 62%;
+	}
+	.button {
+		padding: 20px 45px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* modalDemo */
+.galleyIndexWrapper {
+	width: 960px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+.clearfix {
+	zoom: 1;
+}
+.event2 div {
+	display: block;
+}
+.clearfix {
+	content: ".";
+}
+.clearfix:after, .clearrHidden {
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+}
+.galleryIndex .unitMiddle {
+	width: 100% !important;
+	margin: 0 0 20px;
+}
+.galleryIndex .unit {
+	width: auto;
+	height: auto;
+	overflow: hidden;
+	padding: 0;
+}
+.galleryIndex a {
+	display: block;
+	color: #fff;
+}
+.event2 a:visited {
+	text-decoration: none;
+}
+.event2 a:link{
+	color: #333;
+}
+.event2 a {
+	color: #333;
+	border: none;
+	text-decoration: none;
+	background: transparent;
+	width: 800px;
+}
+.event2 a:webkit-any-link {
+	cursor: pointer;
+}
+.galleryIndex .unitMiddle .photo {
+	width: 800px;
+	height: 260px !important;
+}
+.event2 p {
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
+.galleryIndex .unitMiddle img {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+	height: auto;
+	opacity: 0.5;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: inherit;
+}
+.event2 img {
+	border: none;
+}
+.galleryIndex .unit .text {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	background-color: rbga(229, 0, 19, .8);
+	transition: all .2s linear;
+}
+.font-medum {
+	font-family: din-condensed, sans-serif;
+	font-weight: 300%;
+}
+.galleryIndex .unit .detail {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 60px;
+	height: 22px;
+	padding: 8px 0 0 10px;
+	color: #fff;
+	background: url(https://chiyo-katsumasa.com/themes/chiyo/images/label.png) no-repeat left top;
+	font-size: 15px;
+	line-height: 1;
+}
+.js-modal-btn-vime {
+	color: black;
+}

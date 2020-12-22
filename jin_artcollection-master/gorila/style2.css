@@ -1,0 +1,116 @@
+@charset "UTF-8";
+/*
+Theme Name: 夢みるゴリラ
+Author: Daisuke Okamura
+Description: 夢みるゴリラblog
+Version: 1.0
+*/
+/* アニメーションを使うため上とセット
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@-webkit-keyframes modal-video-inner {
+  0% {
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+@keyframes modal-video-inner {
+  0% {
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+.modal-video-movie-wrap {
+  -webkit-animation: modal-video-inner 0.3s ease-out;
+  animation: modal-video-inner 0.3s ease-out;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.modal-video-close-btn:focus {
+  outline: none;
+}
+
+.demo-main {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.demo-inner {
+  padding: 0 30px;
+}
+
+.c-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.c-flex--text a {
+  font-size: 15px;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: 1px solid #333;
+}
+
+.c-flex.c-flex--images {
+  margin-top: 40px;
+}
+
+.c-flex--images a {
+  width: 30%;
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.c-flex--images img {
+  width: 100%;
+}
+
+@media screen and (max-width: 560px) {
+  .c-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .c-flex--text a {
+    margin-top: 12px;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+  .c-flex--text a:first-child {
+    margin-top: 0;
+  }
+  .c-flex--images a {
+    width: 100%;
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 12px;
+  }
+  .c-flex--images a:first-child {
+    margin-top: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
